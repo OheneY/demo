@@ -5,24 +5,30 @@
     <title>Document</title>
 </head>
 <body>
-   
 <?php 
 
-$number = 10;
+$x = "outside"; // global
 
-$number = 345;
+function convert() {
+global $x;
+$x = "inside"; // local 
 
-define('NUMBER', 1000);
+}
 
-//NUMBER = 34532;
 
-echo 'constant ' . NUMBER;
+echo $x;
+
 echo "<br>";
-echo 'variable ' .  $number;
+
+convert();
+
+echo $x;
+
+echo $x;
+
     
     
-?>   
-   
-    
+?>
+
 </body>
 </html>

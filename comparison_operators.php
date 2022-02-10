@@ -6,58 +6,17 @@
 </head>
 <body>
 
-<!--
 
-  <h2>Comparison Operators</h2>
-  <pre>
-      
-      equal ==
-      identical ===
-      compare > <  >= <= <>
-      not equal !=
-      not identical !==
-      
-</pre>
+    <?php
 
+        if(4 <= 4){
 
- <h2>Logical Operators</h2>
-  <pre>
-      
-     And &&
-     Or  ||
-    Not  !
-      
-</pre>
--->
+            echo "true";
+            
+        }
 
+    ?>
 
-<?php 
-   
-if(4 === 4 && 5 < 10 ) {
-
-    echo "it is true <br>";
-
-}
-
-
-if(4 !== 4 || 5 < 10 ) {
-
-    echo "it is true<br>";
-
-}
-
-
-if(4 <> 5) {
-
-    echo "it is true";
-
-}
-
-
-    
-    
-    
-?>
 
 </body>
 </html>
